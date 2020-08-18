@@ -1,0 +1,51 @@
+{
+  "id": "1951451",
+  "name": "vue项目",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "953311",
+      "name": "返回",
+      "font_class": "fanhui",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "1440886",
+      "name": "返回顶部 ",
+      "font_class": "fanhuidingbu",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "8351822",
+      "name": "购物车",
+      "font_class": "gouwuche",
+      "unicode": "e69e",
+      "unicode_decimal": 59038
+    },
+    {
+      "icon_id": "5732293",
+      "name": "分类",
+      "font_class": "sort",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    },
+    {
+      "icon_id": "6557199",
+      "name": "首页",
+      "font_class": "faxian-copy",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "8575316",
+      "name": "我的",
+      "font_class": "wode",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    }
+  ]
+}
