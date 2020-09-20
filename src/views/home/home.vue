@@ -1,5 +1,5 @@
 <template>
-<!-- 首页最难部分--tabcontrol和goodlist总结：
+<!-- 首页绕脑部分--tabcontrol和goodlist总结：
 tabcontrol：
 1：首先通过props传三个信息：‘流行’，‘精选’，‘时尚’进去，告诉tabcontrol遍历几个；
 2：点谁谁变红，就是和变红案例一样；
@@ -201,6 +201,7 @@ export default {
                    this.backtopisshow = true
               }else{
                   this.backtopisshow = false
+                  
               }
         })
         },

@@ -23,10 +23,12 @@ props: {
 },
 methods: {
   imgloadok(){
-    if (this.$route.path.indexOf('/home')) {
+    if (this.$route.path.indexOf('/home') != -1) {
       this.$bus.$emit('imgloadcomplete')/* 一旦imgloadok函数触发，就发射一个叫做imgloadcomplete的函数去bus */
-    }else if(this.$route.path.indexOf('/detail')){
+    }else if(this.$route.path.indexOf('/detail') != -1){
         this.$bus.$emit('detailgoodlistok')
+    }else if(this.$route.path.indexOf('/category') != -1){
+       this.$bus.$emit('catdetailimgok')
     }
     
   },
@@ -35,8 +37,8 @@ methods: {
     
   },
     whichtype(){
-      /* return this.gooditems.show.img || this.gooditems.image */ /* 换个位置就不行了，爷佛了 */
-    return this.gooditems.image  || this.gooditems.show.img
+      /* return this.gooditems.show.img || this.gooditems.image */ /* 换个位置就不行了，佛了 */
+    return this.gooditems.img || this.gooditems.image  || this.gooditems.show.img
   }
 },
 }
