@@ -37,7 +37,7 @@ methods: {
     
   },
     whichtype(){
-      /* return this.gooditems.show.img || this.gooditems.image */ /* 换个位置就不行了，佛了 */
+
     return this.gooditems.img || this.gooditems.image  || this.gooditems.show.img
   }
 },

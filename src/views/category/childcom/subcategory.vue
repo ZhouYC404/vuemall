@@ -31,7 +31,7 @@ subcatimgok(){//刷新scroll的高度
 
 <style scoped>
 .subcategory{
-    display: flex;/* 因为这个flex，category.vue中#catscroll的flex:1不能关闭，关闭了页面会混乱；但是这个flex又不能去掉，图片不好排列，所以flex:1只好留着，但是目前不知道用处，两个flex嵌套产生bug了。。。 */
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }

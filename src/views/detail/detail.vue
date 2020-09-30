@@ -77,7 +77,7 @@ methods: {
         product.desc = this.goods.desc
         product.price = parseInt(this.goods.nowPrice).toFixed(2)
         product.iid = this.iid
-       let res = await this.$store.dispatch('addcart',product)/* 这句await需要把addtocart变成async，如果觉得不妥可以在methods里面包一个async函数，把这句话和下面的log放进去！在这里调用那个函数 */
+       let res = await this.$store.dispatch('addcart',product)
        console.log(res);
     }
 },
@@ -162,14 +162,7 @@ mounted() {
 
              this.$refs.scroll1.scroll.on('scroll',(position)=>{
                  let y = -position.y
-                 /* console.log('y:'+y);
-                 console.log('0:'+ this.themetopy[0]);
-                 console.log('1:'+this.themetopy[1]);
-                 console.log('2:'+this.themetopy[2]);
-                 console.log('3:'+this.themetopy[3]);
-                 console.log(this.currentindex); 
-                 console.log(this.themetopy[2] > y > this.themetopy[1]); */
-                 /* 老师的方法是用每次滚动时，for循环遍历themetopy，遍历里面加上if判断值在不在topy[i]和[i+1]之间，这个前提是currentindex就是要传0 1 2 3，而且数组下标又恰好是0 1 2 3，如果currentindex要传的是文字之类的，那就不行了,但是恰好我们的navbar里面用了v-for存储的每个id就是数字·，所以用这种方法可以的。*/
+                 
                  if (y < this.themetopy[1]){
                      this.$refs.detailnavbar.currentindex =0
                  }else if ( y >= this.themetopy[1] && y<this.themetopy[2]) {

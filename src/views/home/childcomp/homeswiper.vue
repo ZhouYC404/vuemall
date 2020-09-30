@@ -21,7 +21,7 @@ export default {
       }
     },
     methods: {
-        swiperimgok(){/* 图片加载完成发送火箭 */
+        swiperimgok(){
             this.$emit('swiperimgok')
         }
     },

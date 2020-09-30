@@ -19,7 +19,7 @@ export default new Vuex.Store({
       for (const item of context.state.cartlist) {/* 每次点击加入购物车都要判断：新加入的物品是否已经在购物车中存在过 */
         if (payload.iid === item.iid) {/* 如果存在过，直接把老的物品的count属性加一 */
           item.count +=1
-          temp = item/* 并且让temp等于这个老物品，等于payload也行，一样的 */
+          temp = item
           resolve('当前商品数量加1！')
         }
       }
@@ -31,9 +31,6 @@ export default new Vuex.Store({
         resolve('新物品添加成功！')
       }
       console.log('购物车中的物品和数量:');
-      /* for (let i = 0; i < state.cartlist.length; i++) {
-          console.log(state.cartlist[i].iid+':'+state.cartlist[i].count);
-      } */
       for (const it of context.state.cartlist) {/* 打印cartlist而已 */
         console.log('id：'+it.iid+' 数量: '+it.count);
       }

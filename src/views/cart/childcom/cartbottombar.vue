@@ -25,7 +25,7 @@ computed: {
          return '￥' + this.$store.state.cartlist.filter(item =>
         {return item.checked
         }).reduce((prev,item) => {
-            return prev + item.price * item.count/* P217返回checked属性为true（就是被选中的）的物品的价格乘以数量的总价格 */
+            return prev + item.price * item.count/* 返回checked属性为true（就是被选中的）的物品的价格乘以数量的总价格 */
         },0)    
     },
     cal(){
@@ -38,9 +38,7 @@ computed: {
         if (this.$store.state.cartlist.length === 0) {
             return false
         }
-                /* 后面一个感叹号：返回!item.checked = true的物品，也就是没被选中的物品 
-                   前面一个感叹号：当filter数组中不存在没被选中的物品(length =0)时，返回true
-                                  当filter数组中有一个或以上没被选中的物品(length>=1)时，返回false*/
+                
         return !this.$store.state.cartlist.filter(item=>{return !item.checked}).length
     },
 },
@@ -72,7 +70,7 @@ methods: {
     align-items: center;
 }
 .checkall{
- line-height: 40px;/* 设置行高，下面图片和文字都设置vertical-align才能对齐？？？？？？？？？？？ */
+ line-height: 40px;
 }
 .checkall span{
     margin-left: 3px;

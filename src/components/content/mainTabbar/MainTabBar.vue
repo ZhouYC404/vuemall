@@ -24,7 +24,7 @@
 </template>
 
 <script>
-  import TabBar from '../../common/tabbar/TabBar'/* 这里把TabBar写成TabBarItem，网页不报错，又只显示一部分标签，搞得我。。。应该是我写成一样的了，浏览器就没有class叫tab-bar的标签了，因为根本没导入 */
+  import TabBar from '../../common/tabbar/TabBar'
   import TabBarItem from '../../common/tabbar/TabBarItem'
   export default {
     name: "MainTabBar",
