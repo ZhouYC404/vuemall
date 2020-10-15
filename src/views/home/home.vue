@@ -69,8 +69,6 @@ export default {
              this.gethomegoods('pop')
              this.gethomegoods('new')/* ↑↓获取下面那3块的数据 */
              this.gethomegoods('sell')
-             
-             
     },
     activated() {/* 进入home页面时触发 */
         this.$refs.scroll1.scroll.scrollTo(0,this.savey,1)/* 读取savey的值，用scrollto进行跳转 */
