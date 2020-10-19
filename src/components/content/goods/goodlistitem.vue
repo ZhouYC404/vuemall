@@ -2,7 +2,7 @@
 <div class="gooditems" @click="itemclick()">
   
    <div>
-       <img :src="whichtype()" alt="" @load="imgloadok()"><!-- 新属性@load，可以监听这个标签的内容是否加载完毕，加载完毕就执行imgloadok函数 -->
+       <img v-lazy="whichtype()" alt="" @load="imgloadok()"><!-- 新属性@load，可以监听这个标签的内容是否加载完毕，加载完毕就执行imgloadok函数 -->
    </div>
    <div class="goodsinfo">
        <p>{{gooditems.title}}</p>

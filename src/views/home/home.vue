@@ -103,14 +103,14 @@ export default {
 
     },
     methods: {
-        
-        ifshowcontrol1(){/* 决定是隐藏还是显示control1 */
+        /* 决定是隐藏还是显示control1 */
+        /* ifshowcontrol1(){
             this.$refs.scroll1.scroll.on('scroll',(position)=>{
               if (this.taboffsettop!=0) {
                   this.istabfixed = (-position.y)>this.taboffsettop
               }
           })
-        },
+        }, */
         swiperallright(){/* 当检测到swiper的img加载完成后把tabcontrol的offsettop给taboffsettop变量 */
 
                 this.taboffsettop = this.$refs.tabcontrol2.$el.offsetTop/* 通过el才能获取到offsettop */
